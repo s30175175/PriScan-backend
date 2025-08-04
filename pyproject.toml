@@ -1,0 +1,23 @@
+[project]
+name = "priscan-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "celery>=5.5.3",
+    "fastapi[standard]>=0.116.1",
+    "redis>=6.2.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+fixable = ["E", "F", "I"]
